@@ -1,3 +1,9 @@
+/*
+December 25th, 2017.
+
+My first attempt at binary search.
+*/
+
 #include <iostream>
 //25 numero
 //12 numeros a leer
@@ -6,6 +12,7 @@
 using namespace std; 
   int binary(int searchNumber,int size,int* numbers){
     int binaryProgress=size/2;
+
     while(numbers[binaryProgress]!=searchNumber){
       if(numbers[binaryProgress]<searchNumber){
         binaryProgress+=(binaryProgress/2);
